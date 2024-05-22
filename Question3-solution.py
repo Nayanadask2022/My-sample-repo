@@ -1,4 +1,5 @@
-import re #Importing re module for regular expression
+#Importing re module for regular expression
+import re 
 input_string = "$180,240/y"
 
 # printing original string 
