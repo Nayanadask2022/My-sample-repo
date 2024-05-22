@@ -1,5 +1,5 @@
-# A class to create a new node
-  
+# Maximum value in a binary tree
+
 class newNode:
     def __init__(self, data):
         self.data = data
@@ -16,8 +16,8 @@ def findMax(root):
         return float('-inf')
  
     # Return maximum of 3 values:
-    # 1) Root's data 2) Max in Left Subtree
-    # 3) Max in right subtree
+    # a) Root's data b) Max in Left Subtree
+    # c) Max in right subtree
     res = root.data
     lres = findMax(root.left)
     rres = findMax(root.right)
@@ -28,7 +28,7 @@ def findMax(root):
     return res
  
  
-# Sample program for passing values
+# Sample snippet for passing values
 if __name__ == '__main__':
     root = newNode(5)
     root.left = newNode(3)
